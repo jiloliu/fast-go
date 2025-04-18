@@ -44,4 +44,4 @@ GO_LDFLAGS="-X ${VERSION_PACKAGE}.gitVersion=${VERSION} \
 # -ldflags: 传入上面定义的链接器标志
 # -o: 指定输出文件路径和名称
 # 最后参数是入口文件路径
-go build -v -ldflags "${GO_LDFLAGS}" -o ${OUTPUT_DIR}/fg-apiserver -v cmd/fg-apiserver/main.go
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -v -ldflags "${GO_LDFLAGS}" -o ${OUTPUT_DIR}/fg-apiserver -v cmd/fg-apiserver/main.go

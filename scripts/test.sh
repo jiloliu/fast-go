@@ -12,7 +12,7 @@ set -o pipefail
 # The root of the build/dist directory
 PROJ_ROOT=$(dirname "${BASH_SOURCE[0]}")/..
 
-INSECURE_SERVER="127.0.0.1:6666"
+INSECURE_SERVER="10.1.0.8:6666"
 
 Header="-HContent-Type: application/json"
 CCURL="curl -s -XPOST" # Create

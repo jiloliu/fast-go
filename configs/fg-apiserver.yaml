@@ -9,9 +9,9 @@ expiration: 1000h
 # MySQL 数据库相关配置
 mysql:
   # MySQL 机器 IP 和端口，默认 127.0.0.1:3306
-  addr: 127.0.0.1:3306
+  addr: mariadb:3306
   # MySQL 用户名(建议授权最小权限集)
-  username: fastgo
+  username: root
   # MySQL 用户密码
   password: fastgo1234
   # fastgo 系统所用的数据库名
